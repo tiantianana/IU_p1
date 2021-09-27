@@ -266,7 +266,7 @@ section {
 footer {
     background-color: #1f2636;
     text-align: center;
-    padding: 15px;
+    padding: 2vh;
 }
 
 footer > a img {
@@ -304,11 +304,9 @@ footer > a img {
     .usa_media div h2, .europe_media div h2, .united_arab_emirates_media div h2 {
         font-size: 200%;
     }
-
     #map1 img {
         width: 100%;
     }
-
     #map2 img, #map3 img {
         display: none;
     }
@@ -364,7 +362,7 @@ footer > a img {
     }
 }
 
-/* Version Mobil */
+/* Version Mobile */
 @media screen and (max-width: 600px) {
 
     /* Header for mobile phone */
