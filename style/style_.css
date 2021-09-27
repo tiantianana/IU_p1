@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/************ HEADER ********************/
+
+header {
+    display: flex;
+    /*position: fixed; Esto mantiene el header siempre*/
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    line-height: 10vh;
+    background-color: #1f2636;
+}
+
+header * {
+    display: inline;
+    height: 10vh;
+}
+
+header h1 {
+    margin-left: 2vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5vw;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+header ul {
+    margin-left: 2vw;
+}
+
+header li a {
+    padding: 0.5vw;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header li a:hover {
+    background-color: #34405a;
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+}
+
+/* BUTTONS */
+#button {
+    right: 2rem;
+    position: absolute;
+}
+
+#button button {
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5vw;
+    height: 50px;
+    padding: 12px 13px;
+    margin-left: 15px;
+    background-color: #f59038;
+    border-style: solid;
+    border-color: #aa5c18;
+    cursor: pointer;
+}
+
+#button button:hover {
+    background-color: #f3a968;
+}
+
+/**************************************************************************/
+/******* MAIN ********/
+/**************************************************************************/
+section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/***** Search Box *****/
+#search {
+    background-color: #79a58c;
+}
+
+#search-container {
+    float: left;
+    display: block;
+    margin-top: 3%;
+    margin-bottom: 4%;
+}
+
+#search-container input[type=text] {
+    padding: 1vh;
+    margin-top: 1vh;
+    font-size: 2vw;
+    border: none;
+}
+
+#search-container button {
+    float: right;
+    padding: 1vh;
+    margin-top: 1vh;
+    background: #ddd;
+    font-size: 2vw;
+    border: none;
+    cursor: pointer;
+}
+
+#search-container button:hover {
+    background: gray;
+}
+
+/********* MAP *******/
+#map {
+    background-color: #79a58c;
+    width: 100%;
+}
+
+#map1 img {
+    background-color: #79a58c;
+    width: 100%;
+}
+
+
+/**************************************************************************/
+/********* EXPERIENCE *****/
+/**************************************************************************/
+
+#experiences h2 {
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    letter-spacing: 2px;
+    color: #776645;
+    font-size: 5vh;
+    font-weight: 200;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: 6vh;
+}
+
+#experiences {
+    background-color: #f1d38d;
+}
+.grid-container {
+    margin: 2% 5% 2% 5%;
+    display: grid;
+    padding-top: 15vh;
+    padding-bottom: 10vh;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+}
+
+.grid-item {
+    border-radius: 0 40px 0 40px;
+    background-color: #eee0bf;
+    padding: 4.1%;
+    margin: 7%;
+    font-size: 150%;
+    text-align: center;
+}
+
+.grid-item img {
+    width: 110.3%;
+    margin-top: -5.5%;
+    margin-left: -5.2%;
+    border-radius: 0 40px 0 0;
+}
+
+.grid-item h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    width: 100%;
+    font-size: 60%;
+    padding: 2%;
+    margin: 2%;
+}
+
+.grid-item p {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    width: 100%;
+    font-size: 60%;
+    text-align: justify;
+}
+
+
+/**************************************************************************/
+/*<<<< PAGINAS >>>>*/
+/**************************************************************************/
+
+/*-- Seccion 1: BACKGROUND --*/
+#background_photo {
+    width: 100%;
+}
+
+/* Title */
+.usa_description h2, .europe_description h2, .united_arab_emirates_description h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    letter-spacing: 2px;
+    padding-left: 3%;
+    padding-top: 2%;
+    border-color: #34405a;
+    border-top: solid;
+}
+
+/* Description */
+.usa_description p, .europe_description p, .united_arab_emirates_description p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    border-color: #34405a;
+    border-bottom: solid;
+    padding-bottom: 2%;
+}
+
+/*-- Seccion 2: PICTURES AND VIDEOS --*/
+.usa_media, .europe_media, .united_arab_emirates_media {
+    margin-top: 0.25%;
+    height: auto;
+    background-color: #c75e57;
+}
+
+.usa_media div h2, .europe_media div h2, .united_arab_emirates_media div h2 {
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    letter-spacing: 2px;
+    color: #ffffff;
+    height: 0;
+    margin: 3.5%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.five_columns {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 17vh 3% 5%;
+}
+
+.five_columns img, .five_columns iframe {
+    flex: 1 0 17%;
+    margin: 2vh;
+    width: 25vh;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/**************************************************************************/
+/*<<<< FOOTER >>>>*/
+/**************************************************************************/
+footer {
+    background-color: #1f2636;
+    text-align: center;
+    padding: 15px;
+}
+
+footer > a img {
+    position: absolute;
+    display: block;
+    width: 5vh;
+    right: 1vh;
+    margin-top: -1.5vh;
+}
+
+#copyright {
+    background-color: #1f2636;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.social_icons {
+    position: absolute;
+    margin-top: -3vh;
+    display: flex;
+}
+
+.social_icons img {
+    width: 3vh;
+}
+
+/**************************************************************************/
+/*<<<< MOBILE/TABLET >>>>*/
+/**************************************************************************/
+
+/* Version Desktop */
+@media screen and (min-width: 770px) {
+
+    .usa_media div h2, .europe_media div h2, .united_arab_emirates_media div h2 {
+        font-size: 200%;
+    }
+
+    #map1 img {
+        width: 100%;
+    }
+
+    #map2 img, #map3 img {
+        display: none;
+    }
+}
+
+/* Version Tablet */
+@media screen and (min-width: 601px) and (max-width: 769px) {
+
+    .usa_media div h2, .europe_media div h2, .united_arab_emirates_media div h2 {
+        font-size: 150%;
+    }
+
+    #map1 img, #map3 img {
+        display: none;
+    }
+
+    #map2 img {
+        width: 100%;
+    }
+}
+
+/* Version Mobil */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 3vh;
+        cursor: pointer;
+    }
+
+    header li:hover {
+        background-color: #34405a;
+    }
+
+    header nav span {
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    header li {
+        padding: 1vh;
+        background-color: #1f2636;
+    }
+
+    header ul {
+        display: none;
+        position: absolute;
+        background-color: #99a2b9;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        z-index: 1;
+    }
+
+    header nav:hover ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #search-container input[type=text] {
+        font-size: 3vw;
+    }
+
+    #search-container button {
+        font-size: 3vw;
+    }
+
+    #map1 img, #map2 img {
+        display: none;
+    }
+
+    #map3 img {
+        width: 100%;
+    }
+}
