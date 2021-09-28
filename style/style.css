@@ -15,7 +15,6 @@ header {
     right: 0;
     width: 100%;
     height: auto;
-    line-height: 10vh;
     background-color: #1f2636;
 }
 
@@ -24,43 +23,54 @@ header * {
     height: 10vh;
 }
 
+header img {
+    margin-left: 3vw;
+}
+
 header h1 {
-    margin-left: 2vw;
+    margin-left: 1vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2.5vw;
+    font-size: 34px;
     color: #ffffff;
     font-weight: bold;
+    line-height: 8.9vh;
+}
+
+header h1 span {
+    font-weight: 100;
 }
 
 header ul {
-    margin-left: 2vw;
+    margin-left: 3vw;
 }
 
 header li a {
-    padding: 0.5vw;
+    padding: 1.5vh 1vw;
     color: #ffffff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.2vh;
 }
 
 header li a:hover {
     background-color: #34405a;
-    padding: 0.5vw;
     border-radius: 0.5vw;
 }
 
 /* BUTTONS */
 #button {
-    right: 2rem;
+    right: 4rem;
     position: absolute;
 }
 
 #button button {
     color: #ffffff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-radius: 5vw;
-    height: 50px;
-    padding: 12px 13px;
-    margin-left: 15px;
+    border-radius: 30px;
+    height: 40px;
+    width: 65px;
+    margin-left: 1vw;
+    margin-top: 2vh;
+    font-size: 2vh;
     background-color: #f59038;
     border-style: solid;
     border-color: #aa5c18;
@@ -95,22 +105,25 @@ section {
 #search-container input[type=text] {
     padding: 1vh;
     margin-top: 1vh;
-    font-size: 2vw;
+    font-size: 1.4vw;
     border: none;
+    background: rgb(231, 201, 176);
+    border-radius: 30px 0 0 30px;
 }
 
 #search-container button {
     float: right;
     padding: 1vh;
     margin-top: 1vh;
-    background: #ddd;
-    font-size: 2vw;
+    background: rgb(219, 158, 108);
+    font-size: 1.4vw;
     border: none;
     cursor: pointer;
+    border-radius: 0 30px 30px 0;
 }
 
 #search-container button:hover {
-    background: gray;
+    background: rgb(175, 128, 89);
 }
 
 /********* MAP *******/
@@ -133,14 +146,15 @@ section {
     font-style: italic;
     letter-spacing: 2px;
     color: #776645;
-    font-size: 5vh;
+    font-size: 6vh;
     font-weight: 200;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
     text-align: center;
-    margin-top: 6vh;
+    margin-top: 8vh;
+
 }
 
 #experiences {
@@ -157,7 +171,7 @@ section {
 
 .grid-item {
     border-radius: 0 40px 0 40px;
-    background-color: #eee0bf;
+    background-color: #f5e5bc;
     padding: 4.1%;
     margin: 7%;
     font-size: 150%;
@@ -176,8 +190,8 @@ section {
     text-align: center;
     width: 100%;
     font-size: 60%;
-    padding: 2%;
-    margin: 2%;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .grid-item p {
@@ -204,25 +218,39 @@ section {
     font-style: italic;
     letter-spacing: 2px;
     padding-left: 3%;
-    padding-top: 2%;
-    border-color: #34405a;
-    border-top: solid;
+    padding-top: 3%;
 }
 
 /* Description */
 .usa_description p, .europe_description p, .united_arab_emirates_description p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: justify;
-    padding: 1% 3% 2% 3%;
+    font-size: 2.2vh;
+    padding: 1% 3% 0% 3%;
+}
+
+.usa_description, .europe_description, .united_arab_emirates_description {
     border-color: #34405a;
     border-bottom: solid;
+    border-top: solid;
+    padding-bottom: 2%;
 }
 
 /*-- Seccion 2: PICTURES AND VIDEOS --*/
-.usa_media, .europe_media, .united_arab_emirates_media {
+.usa_media {
     margin-top: 0.25%;
     height: auto;
     background-color: #c75e57;
+}
+.europe_media {
+    margin-top: 0.25%;
+    height: auto;
+    background-color: #387ba1;
+}
+.united_arab_emirates_media {
+    margin-top: 0.25%;
+    height: auto;
+    background-color: #6E8884;
 }
 
 .usa_media div h2, .europe_media div h2, .united_arab_emirates_media div h2 {
@@ -234,6 +262,7 @@ section {
     color: #ffffff;
     height: 0;
     margin: 3.5%;
+    margin-top: 7vh;
     left: 0;
     right: 0;
     text-align: center;
@@ -245,7 +274,7 @@ section {
     margin: 17vh 3% 5%;
 }
 
-.five_columns img, .five_columns iframe {
+.five_columns img, .five_columns video {
     flex: 1 0 17%;
     margin: 2vh;
     width: 25vh;
@@ -267,9 +296,10 @@ footer {
 footer > a img {
     position: absolute;
     display: block;
-    width: 5vh;
+    width: 6.5vh;
     right: 1vh;
-    margin-top: -1.5vh;
+    left: 3.5vw;
+    margin-top: -2vh;
 }
 
 #copyright {
@@ -281,12 +311,14 @@ footer > a img {
 
 .social_icons {
     position: absolute;
-    margin-top: -3vh;
+    margin-top: -3.5vh;
     display: flex;
+    right: 5vw;
 }
 
 .social_icons img {
-    width: 3vh;
+    width: 4vh;
+    margin-left: 1vw;
 }
 
 /**************************************************************************/
@@ -299,37 +331,40 @@ footer > a img {
     .usa_media div h2, .europe_media div h2, .united_arab_emirates_media div h2 {
         font-size: 200%;
     }
-    .image-map1 img {
-        width: 100%;
-    }
     #image-map1 img {
         background-color: #79a58c;
         width: 100%;
     }
-
-    #image-map3 img, #image-map2 {
+    #image-map3 img, #image-map2 img {
         display: none;
     }
 }
 
 /* Version Tablet */
-@media screen and (max-width: 769px) and (min-width: 601px){
+@media only screen and (max-width: 769px) and (min-width: 601px){
 
     /* Header for mobile phone */
-    header h1 {
-        font-size: 3vh;
-        cursor: pointer;
+    header img {
+        margin-left: 6vw;
     }
-    header li:hover {
-        background-color: #34405a;
+    header h1 {
+        font-size: 4vh;
+        cursor: pointer;
+        margin-left: 2vw;
     }
     header nav span {
         color: white;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     header li {
-        padding: 1vh;
+        padding: 2vh;
         background-color: #1f2636;
+        width: 15vw;
+    }
+    header li:hover {
+        background-color: #34405a;
+        padding: 2vh;
+        width: 15vw;
     }
     header ul {
         display: none;
@@ -351,32 +386,40 @@ footer > a img {
         background-color: #79a58c;
         width: 100%;
     }
-    #image-map1 img, #image-map3 {
+    #image-map1 img, #image-map3 img{
         display: none;
     }
-    .social_icons img {
-        width: 2vh;
+    #button {
+        right: 3rem;
+        position: absolute;
     }
 }
 
 /* Version Mobile */
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
 
     /* Header for mobile phone */
-    header h1 {
-        font-size: 3vh;
-        cursor: pointer;
+    header img {
+        margin-left: 6vw;
     }
-    header li:hover {
-        background-color: #34405a;
+    header h1 {
+        font-size: 4vh;
+        cursor: pointer;
+        margin-left: 2vw;
     }
     header nav span {
         color: white;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     header li {
-        padding: 1vh;
+        padding: 2vh;
         background-color: #1f2636;
+        width: 15vw;
+    }
+    header li:hover {
+        background-color: #34405a;
+        padding: 2vh;
+        width: 15vw;
     }
     header ul {
         display: none;
@@ -391,20 +434,21 @@ footer > a img {
         display: flex;
         flex-direction: column;
     }
-
-    #search-container input[type=text] {
-        font-size: 3vw;
-    }
-
-    #search-container button {
-        font-size: 3vw;
-    }
+   
     #image-map3 img {
         background-color: #79a58c;
         width: 100%;
     }
-
-    #image-map1 img, #image-map2 {
+    #image-map1 img, #image-map2 img{
         display: none;
     }
+    #button {
+        right: 2rem;
+        position: absolute;
+    }
+    .social_icons img {
+        width: 3vh;
+
+    }
+
 }
