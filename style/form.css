@@ -88,10 +88,18 @@ input[type=text], input[type=password] {
     cursor: pointer;
 }
 
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
+/* Version Desktop */
+@media screen and (min-width: 770px) {
+
     .login-form {
         width: 80%; /* Could be more or less, depending on screen size */
     }
+}
 
+/* Version Tablet */
+@media only screen and (max-width: 769px) and (min-width: 601px){
+
+    .login-form {
+        width: 90%; /* Could be more or less, depending on screen size */
+    }
 }
